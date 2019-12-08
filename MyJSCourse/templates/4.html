@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var Add = function (x,y) {
+            return x+y;
+        };
+
+
+        var Sub = function (x,y) {
+            return x-y;
+        };
+
+
+        var Mul = function (x,y) {
+            return x*y;
+        };
+
+
+        var Div = function (x,y) {
+            if (y != 0)
+                return x/y;
+            else
+                return "Dividing by 0 is imposible";
+        };
+        document.write(Add(2,3));
+        document.write("<br>");
+        document.write(Sub(2,3));
+        document.write("<br>");
+        document.write(Mul(2,3));
+        document.write("<br>");
+        document.write(Div(2,3));
+        document.write("<br>");
+        document.write(Div(2,0));
+        document.write("<hr>");
+
+        a = prompt("Put 1 elemet");
+        b = prompt("Put 2 elemet");
+        document.write(Add(a,b));
+        document.write("<br>");
+        document.write(Sub(a,b));
+        document.write("<br>");
+        document.write(Mul(a,b));
+        document.write("<br>");
+        document.write(Div(a,b));
+        document.write("<hr>");
+
+        var Abs = function (number) {
+            if (number > 0)
+                document.write("Number is > 0");
+            document.write("<br>");
+            if (number < 0)
+                document.write("Number is < 0");
+            document.write("<br>");
+            if (number == 0)
+                document.write("Number is 0");
+            document.write("<br>");
+
+            if (number % 2 == 0)
+                document.write("Делиться на 2 без остатка");
+            document.write("<br>");
+            if (number % 5 == 0)
+                document.write("Делиться на 5 без остатка");
+            document.write("<br>");
+            if (number % 3 == 0)
+                document.write("Делиться на 3 без остатка");
+            document.write("<br>");
+            if (number % 6 == 0)
+                document.write("Делиться на 6 без остатка");
+            document.write("<br>");
+            if (number % 9 == 0)
+                document.write("Делиться на 9 без остатка");
+            document.write("<br>");
+
+        };
+
+        document.write(Abs(6));
+
+    </script>
+</body>
+</html>

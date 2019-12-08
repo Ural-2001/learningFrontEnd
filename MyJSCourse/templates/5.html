@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var documents = {
+            header: "Hello",
+            body: "Body",
+            footer: "Footer",
+            data: "Data",
+            
+            application: {
+                header1: "Hello1",
+                body1: "Body1",
+                footer1: "Footer1",
+                data1: "Data1"
+            },
+
+            showDoc: function () {
+                document.writeln(this.application.header1);
+                document.writeln(this.application.body1);
+                document.writeln(this.application.footer1);
+                document.writeln(this.application.data1);
+            },
+
+            editDoc: function () {
+                var newheader = prompt("New header:");
+                var newbody = prompt("New body:");
+                var newfooter = prompt("New footer:");
+                var newdata = prompt("New data:");
+
+                this.application.header1 = newheader;
+                this.application.body1 = newbody;
+                this.application.footer1 = newfooter;
+                this.application.data1 = newdata;
+            }
+
+
+        };
+
+        document.write(documents.editDoc());
+        document.write(documents.showDoc());
+
+
+    </script>
+</body>
+</html>

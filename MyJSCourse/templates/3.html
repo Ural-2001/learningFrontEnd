@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var array = Array(1,2,3,4,5,6,6,3,43,55,4,6,73,3,5,5,3,2);
+        var max = 0;
+        var min = 10000;
+        var total = 0;
+        var sr = 0;
+
+        for (var i = 0; i < array.length; i++)
+        {
+            if (array[i] > max)
+                max = array[i];
+        }
+        document.write(max);
+
+        document.write("<br>");
+
+        for (var i = 0; i < array.length; i++)
+        {
+            if (array[i] < min)
+                min = array[i];
+        }
+        document.write(min);
+
+        document.write("<br>");
+
+        for (var i = 0; i < array.length; i++)
+        {
+            total = total + array[i];
+        }
+        document.write(total);
+
+        document.write("<br>");
+
+        for (var i = 0; i < array.length; i++)
+        {
+            sr = total + array[i];
+        }
+        sr = sr / array.length;
+        document.write(sr);
+
+        document.write("<br>");
+
+        for (var i = 0; i < array.length; i++)
+        {
+            if (array[i] % 2 != 0) {
+                document.write(array[i]);
+                document.write(",");
+            }
+        }
+        document.write("<hr>");
+
+
+        var dubarray = Array(5);
+
+        dubarray[0] = Array(1,2,-4,4,5);
+        dubarray[1] = Array(3,5,43,-56,2);
+        dubarray[2] = Array(2,-5,-67,-45,4);
+        dubarray[3] = Array(12,-3,5,35,7);
+        dubarray[4] = Array(9,7,67,4,-45);
+
+        for (var i = 0; i < dubarray.length; i++)
+        {
+            for (var j = 0; j < dubarray[i].length; j++)
+            {
+                if(i == j)
+                {
+                    if (dubarray[i][j] < 0)
+                        dubarray[i][j] = 0;
+                    if (dubarray[i][j] > 0)
+                        dubarray[i][j] = 1;
+                }
+
+            }
+        }
+
+        for (var i = 0; i < dubarray.length; i++)
+        {
+            for (var j = 0; j < dubarray[i].length; j++)
+            {
+                document.write(dubarray[i][j])
+                document.write(" ")
+            }
+            document.write("<br>")
+        }
+
+
+
+
+    </script>
+</body>
+</html>

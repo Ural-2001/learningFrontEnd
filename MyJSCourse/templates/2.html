@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var a = 8;
+        var b = 15;
+        var result = 0;
+        while (a < b) {
+            a++;
+            if (a < b) {
+                result += a;
+            }
+        }
+
+        document.write(result);
+
+        document.write("<hr>");
+
+        a = 8;
+        b = 15;
+        var res = 0;
+
+        while (a < b) {
+            a++;
+
+            if (a < b && a % 2 != 0) {
+                document.write(a);
+            }
+        }
+
+        document.write("<hr>");
+
+        var roads = 10;
+        var count = 1
+         result = 1;
+        while (count <= roads){
+            result = result * count++;
+        }
+        document.write(result);
+
+        document.write("<hr>");
+
+
+        for (var j = 0; j < 3; j++)
+        {
+            for (var i = 0; i < 5; i++)
+            {
+                document.write('*');
+            }
+            document.write('<br>');
+        }
+
+        document.write("<br>");
+
+        for (var j = 0; j < 8; j++)
+        {
+            for (var i = 0; i < j; i++) {
+                document.write("&nbsp * &nbsp");
+            }
+            document.write('<br>');
+        }
+
+        document.write("<br>");
+
+        var n = 7;
+        var l = 0;
+
+        for (var i = 0; i < n; i++)
+        {
+            for (var k = 0; k < n-i; k++)
+                document.write(" &nbsp&nbsp");
+
+
+            for (var j = 0; j < l; j++)
+                document.write(" &nbsp * ");
+            l++;
+            document.write("<br>")
+
+        }
+
+
+        for (var i = 0; i < n; i++)
+        {
+            for (var k = 0; k < 1/n+i; k++)
+                document.write(" &nbsp");
+
+
+            for (var j = 0; j < l; j++)
+                document.write("&nbsp * ");
+            l--;
+            document.write("<br>")
+
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>
