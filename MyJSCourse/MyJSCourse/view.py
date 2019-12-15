@@ -7,9 +7,12 @@ def jscode(request):
 
 def second(request):
     return render(request, '2.html')
+
 def third(request):
     return render(request, '3.html')
+
 def fourth(request):
     return render(request, '4.html')
+
 def fifth(request):
     return render(request, '5.html')
